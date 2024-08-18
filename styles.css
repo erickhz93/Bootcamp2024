@@ -1,0 +1,482 @@
+/*Estilos Generales*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+button:focus, input:focus, textarea:focus {
+    outline: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+
+
+/* Estilos Principales*/
+main{
+    display: flexbox;
+    position: relative;
+    min-height: 100vh;
+    background: #1C2330;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 100px;
+    background-image: url(https://res.cloudinary.com/dkifupg95/image/upload/v1723313080/bg-curvy-desktop_ybqfav.svg);
+    background: linear-gradient(#101C2D, #0D1926);
+    
+
+}
+
+.main header{
+    width: 100%;
+    padding: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+
+}
+
+.main .content-img{
+
+    position: relative;
+    width: 100%;
+    display:flexbox;
+    text-align: center;
+ 
+}
+
+
+.main .content-img .content-text{
+    display: flexbox;
+    justify-content: center;
+    text-align: center;
+}
+
+.main  .content-text h1{
+    text-align: center;
+    line-height: 1.5;
+}
+
+
+.main .content-img{
+    display: flex;
+    justify-content: center;
+}
+
+.main .content-img1{
+    width: 100%;
+    height: auto;
+    margin-top: 150px;
+}
+
+
+.main header .logo{
+    max-width: 150px;
+}
+
+.main header .navigation{
+    display:flex;
+    list-style-type: none;
+    padding-left: 0;
+    
+}
+
+.main header .navigation li a{
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 40px;
+
+}
+
+.main header .navigation li a:hover{
+    color: rgb(240, 255, 255);
+    text-decoration:underline;
+    font-weight: bold;
+}
+
+.main .content-text{
+    display: inline-flexbox;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.main .content-text .btn{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    background: #51DCE2;
+    color:#fff;
+    font-size: 1.1em;
+    font-weight: 500;
+    border-radius: 40px;
+    width: 400px;
+}
+
+.main .content-text .btn:hover{
+    background: #8CDAE4
+
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main .container-grid{
+    text-align: center;
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 6rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.main .container-grid h5{
+    font-weight: bold;
+}
+
+
+
+.main .container-stay{
+    position: relative;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    /* width: 1200px; */
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main .container-see{
+    text-decoration: underline;
+    color: aqua;
+}
+
+.main .container-see:hover{
+    color: #fff;
+}
+
+.main .container-see .bi{
+    color: aqua;
+}
+
+.main .container-see .bi:hover{
+    color: white;
+}
+
+.main .container-stay .stay-img{
+    width: 100%;
+}
+
+.main .container-stay .stay-text{
+    width: 600px;
+
+}
+
+/*Testimoniales*/
+.testimonials{
+    padding: 40px 0;
+    text-align: center;
+    padding-bottom: 280px;
+    
+}
+.testimonials .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.testimonials .col{
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.testimonials .testimonial-logo{
+    position: absolute;
+    left: 80px;
+    top: 126rem;
+    width: 61px;
+    height: 60px;
+    /*z-index: -1; NO PUDIMOS HACER PONER DETRAS LA IMG*/
+        
+}
+
+.testimonial{
+    background: #18263B;
+    padding: 30px;
+}
+
+.testimonial img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+    
+}
+
+
+/*Get early access today*/
+.subscribe-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: absolute;
+    top: 148rem;
+    left: 0;
+    right: 0;
+
+    
+}
+.container-getearly{
+    max-width: 1100px;
+    width: 850px;
+    margin: 0 auto;
+}
+
+.subscribe-box{
+    padding: 50px;
+    padding-bottom: 20px;
+    background: #101C2D;
+    border-radius: 15px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.subscribe-box form{
+    width: 600px;
+    height: 70px;
+    position: relative;
+    margin: 40px auto auto auto;
+}
+
+.subscribe-box form input{
+    padding-left: 40px;
+    text-align: left;
+    width: 350px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    margin-right: 20px;
+}
+
+
+
+.subscribe-box form input::placeholder {
+    color: black;
+
+}
+.subscribe-box form input:invalid {
+    color: black;
+}
+
+  
+
+.subscribe-box form button{
+    background: #51DCE2;
+    border-radius: 30px 30px;
+    border: none;
+    padding: 8px;
+    width: 220px;
+    transition: .3s;
+    cursor: pointer;
+
+}
+
+.subscribe-box form button:hover{
+    background: #8CDAE4;
+
+}
+
+
+
+/*Footer settings*/
+footer{
+    padding-top: 200px;
+    padding-bottom: 60px;
+    background-color: #0C1524;
+    
+}
+
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links{
+    width: 20%;
+    padding: 0 5px;
+    
+}
+.footer-links ul li{
+    list-style: none;
+    
+}
+
+.footer-links ul li a{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+    
+}
+
+.footer-links ul li a:hover{
+    color: rgb(240, 255, 255);
+    padding-left: 16px;
+    text-decoration:underline;
+    font-weight: bold;
+}
+
+
+
+.social-links a{
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-align:left;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all .5s ease;
+}
+
+.social-links a:hover{
+    text-decoration:underline;
+    font-weight: bold;
+}
+
+.footer-links .social-links {
+    display: inline-block;
+    
+}
+
+.footer-links ul li:hover{
+    text-decoration:underline;
+    font-weight: bold;
+}
+
+/*MEDIA*/
+
+@media(max-width:991px){
+    .footer-row{
+        text-align: left;
+    }
+    .footer-links{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .footer .social-links{
+        display: flexbox;
+        justify-content: center;
+    }
+    .main header .navigation{
+        display:inline-flex;
+        list-style-type:none;
+    }
+
+    .testimonials .col{
+        flex: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 15px;
+    }
+
+    .subscribe-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: absolute;
+    top: 206rem;
+    left: 0;
+    right: 0;
+
+    
+}
+
+/*Get early access today*/
+.subscribe-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130vh;
+    position: absolute;
+    top: 200rem;
+    left: 0;
+    right: 0;
+
+    
+}
+.container-getearly{
+    width: 550px;
+    margin: 0 auto;
+}
+
+.subscribe-box{
+    height: 430px;
+    padding: 70px;
+    padding-bottom: 100px;
+    background: #101C2D;
+    border-radius: 15px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.subscribe-box form{
+    width: 600px;
+    height: 70px;
+    position: relative;
+    margin: 40px auto auto auto;
+    
+}
+
+.subscribe-box form input{
+    padding-left: 40px;
+    text-align: left;
+    width: 450px;
+    height: 55px;
+    border-radius: 30px;
+    border: none;
+    margin-right: 900px;
+    
+}
+
+.subscribe-box form button{
+    background: #51DCE2;
+    border-radius: 30px 30px;
+    border: none;
+    padding: 8px;
+    width: 450px;
+    transition: .3s;
+    cursor: pointer;
+    margin-right: 900px;
+    height: 55px;
+    margin-top: 30px;
+
+}
+
+
+}
